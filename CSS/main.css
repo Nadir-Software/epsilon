@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    font-family: "Roboto", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+}
+
+body {
+    background-color: #fdfcff;
+
+    color: #1a1c1e;
+
+    margin: 0;
+}
+
+.header {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    background-color: #d1e4ff;
+
+    color: #001d36;
+
+    height: 10vh;
+    width: 100vw;
+}
+
+.material-symbols-rounded {
+    border-radius: 50%;
+
+    padding: 1%;
+
+    user-select: none;
+}
+
+.material-symbols-rounded:hover:not(.decorative) {
+    background-color: #0061a4;
+
+    color: #ffffff;
+
+    cursor: pointer;
+
+    transition: 0.25s ease;
+}
+
+.response {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 1%;
+    justify-content: center;
+
+    margin-top: 2.5vh;
+    margin-bottom: 2.5vh;
+
+    width: 100vw;
+    height: 75vh;
+}
+
+.response-images {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background-color: #dfe2eb;
+
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+
+    color: #43474e;
+
+    width: 50%;
+    height: 100%;
+}
+
+.response-images img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.response-text {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    background-color: #dfe2eb;
+
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+
+    color: #43474e;
+
+    width: 75%;
+    height: 100%;
+}
+
+.response-text p {
+    margin: 5vw;
+}
+
+.response-text .material-symbols-rounded, .response-images .material-symbols-rounded {
+    font-size: 5rem;
+}
+
+/* Material Design Outlined Text Field */
+/* https://codepen.io/asatraitis/pen/VwZQzBr */
+/* Massive thanks to https://codepen.io/asatraitis */
+
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.material-textfield {
+    position: relative;  
+}
+
+label {
+    position: absolute;
+    font-size: 1rem;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #fdfcff;
+    color: #1a1c1e;
+    padding: 0 0.3rem;
+    margin: 0 0.5rem;
+    transition: .1s ease-out;
+    transform-origin: left top;
+    pointer-events: none;
+}
+
+input {
+    font-size: 1rem;
+    outline: none;
+    border: 1px solid #73777f;
+    border-radius: 5px;  
+    padding: 1rem 0.7rem;
+    color: #1a1c1e;
+    transition: 0.1s ease-out;
+
+    width: 25vw;
+}
+
+input:focus {
+    border-color: #0061a4;
+}
+
+input:focus + label {
+    color: #0061a4;
+    top: 0;
+    transform: translateY(-50%) scale(.9);
+}
+
+  input:not(:placeholder-shown) + label {
+    top: 0;
+    transform: translateY(-50%) scale(.9);
+}

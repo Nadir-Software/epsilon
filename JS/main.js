@@ -3,11 +3,15 @@ const responseImagesElement = document.getElementById('response-images');
 
 const inputElement = document.getElementById('input');
 
+const sendButton = document.getElementById('send');
+
 function understand() {
     var input = inputElement.value;
     const uneditedInput = input;
 
     input = input.toLowerCase();
+
+    sendButton.blur();
 
     checkProfanity(input)
     .then(result => {
@@ -41,7 +45,10 @@ function checkProfanity(str) {
 
 function respond(str) {
     if (/what is .*/i.test(str) || /what are .*/i.test(str) || /what was .*/i.test(str) || /who is .*/i.test(str) || /who was .*/i.test(str) || /where is .*/i.test(str) || /where was .*/i.test(str)) {
+        responseTextElement.innerHTML = "";
+
         responseImagesElement.innerHTML = "";
+        responseImagesElement.style.backgroundImage = "";
     
         var searchTerm = str.replace(/(\?|\ba\b|\ban\b|\bwhat is\b|\bwhat are\b|\bwhat was\b|\bwho is\b|\bwho was\b|\bwhere is\b|\bwhere was\b|\bthe\b)/gi, "").trim();
         console.log(searchTerm);
@@ -51,15 +58,22 @@ function respond(str) {
             .then(data => {
                 const title = data.title;
                 const extract = data.extract;
-                responseTextElement.innerHTML = `<h1>${title}</h1><p>${extract}</p>`;
 
-                if (data.originalimage) {
-                    responseImagesElement.innerHTML = `<img src="${data.originalimage.source}">`;
+                if (extract && title) {
+                    responseTextElement.innerHTML = `<h1>${title}</h1><p>${extract}</p>`;
                 }
 
                 else {
-                    responseImagesElement.innerHTML = `<span class="material-symbols-rounded">error</span><p>No image found</p>`;
+                    responseTextElement.innerHTML = `<span class="material-symbols-rounded decorative">manage_search</span><p>No information found</p>`;
                 }
-            });
+
+                if (data.originalimage) {
+                    responseImagesElement.style.backgroundImage = `url("${data.originalimage.source}")`;
+                }
+                
+                else {
+                    responseImagesElement.innerHTML = `<span class="material-symbols-rounded decorative">image_not_supported</span><p>No image found</p>`;
+                }
+            })
     }
 }

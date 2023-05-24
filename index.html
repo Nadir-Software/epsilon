@@ -14,11 +14,11 @@
 </head>
 <body>
     <div class="header">
-        <span onclick="openLink('github')" class="material-symbols-rounded">code</span>
+        <span tabindex="0" onclick="openLink('github')" class="material-symbols-rounded">code</span>
 
         <h1>Epsilon</h1>
 
-        <span onclick="openLink('home')" class="material-symbols-rounded">home</span>
+        <span tabindex="0" onclick="openLink('home')" class="material-symbols-rounded">home</span>
     </div>
 
     <div class="response">
@@ -40,14 +40,20 @@
     </div>
 
     <div class="container">
+        <span tabindex="0" onclick="copy('article')" class="material-symbols-rounded" id="copy">content_copy</span>
+
         <div class="material-textfield">
-          <input oninput="understand()" id="input" placeholder=" " type="text" autofocus>
-          <label>Ask me anything</label>
+            <input id="input" placeholder=" " type="text" spellcheck="true">
+            <label>Ask me anything</label>
         </div>
+
+        <span tabindex="0" onclick="understand()" class="material-symbols-rounded" id="send">send</span>
     </div>
 
     <!-- JS -->
     <script src="JS/links.js"></script>
     <script src="JS/main.js"></script>
+    <script src="JS/copy.js"></script>
+    <script src="JS/shortcut.js"></script>
 </body>
 </html>

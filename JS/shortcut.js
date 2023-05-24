@@ -1,11 +1,13 @@
 document.addEventListener('keypress', (event) => {
     if (event.key == "/") {
-        console.log(`${event.key} was pressed`);
+        if (!inputElement.focus === inputElement) {
+            console.log(`${event.key} was pressed`);
 
-        inputElement.focus();
+            inputElement.focus();
 
-        setTimeout(() => {
-            inputElement.value = "";
-        });
+            setTimeout(() => {
+                inputElement.value = "";
+            });
+        }
     }
 })

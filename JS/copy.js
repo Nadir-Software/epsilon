@@ -10,10 +10,9 @@ function copy(content) {
 
         copyButton.innerText = "done";
 
-        copyButton.blur();
-
         setTimeout(() => {
             copyButton.innerText = "content_copy";
+            copyButton.blur();
         }, 1000);
     }
 }

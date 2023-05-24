@@ -8,6 +8,11 @@ function openLink(site) {
     }
 
     else if (site == "article") {
+        if (localStorage.getItem('searchTerm') == null) {
+            document.getElementById('wikipedia').blur();
+            return;
+        }
+
         window.open(`https://en.wikipedia.org/wiki/${encodeURIComponent(localStorage.getItem('searchTerm'))}`);
     }
 }

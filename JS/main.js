@@ -53,6 +53,8 @@ function respond(str) {
         var searchTerm = str.replace(/(\?|\ba\b|\ban\b|\bwhat is\b|\bwhat are\b|\bwhat was\b|\bwho is\b|\bwho was\b|\bwhere is\b|\bwhere was\b|\bthe\b)/gi, "").trim();
         console.log(searchTerm);
 
+        localStorage.setItem("searchTerm", searchTerm);
+
         fetch(`https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(searchTerm)}`)
             .then(response => response.json())
             .then(data => {

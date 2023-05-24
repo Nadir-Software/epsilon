@@ -6,4 +6,8 @@ function openLink(site) {
     else if (site == "home") {
         window.open("https://nadir-software.github.io/home");
     }
+
+    else if (site == "article") {
+        window.open(`https://en.wikipedia.org/wiki/${encodeURIComponent(localStorage.getItem('searchTerm'))}`);
+    }
 }

@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
-<body>
+<body class="body-dark">
     <div class="header">
         <span tabindex="0" onclick="openLink('github')" class="material-symbols-rounded">code</span>
 
@@ -49,6 +49,7 @@
         </div>
 
         <span tabindex="0" onclick="understand()" class="material-symbols-rounded" id="send">send</span>
+        <span tabindex="0" onclick="changeTheme('light')" class="material-symbols-rounded" id="theme">light_mode</span>
     </div>
 
     <!-- JS -->
@@ -56,5 +57,6 @@
     <script src="JS/links.js"></script>
     <script src="JS/copy.js"></script>
     <script src="JS/shortcut.js"></script>
+    <script src="JS/theme.js"></script>
 </body>
 </html>

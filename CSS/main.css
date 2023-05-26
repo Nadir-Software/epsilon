@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-:root {
+/* Variables */
+
+.body-dark {
     --primary: #7ddc77;
     --on-primary: #003908;
 
@@ -37,9 +39,49 @@
     --on-surface-variant: #c2c8bd;
 }
 
+.body-light {
+    --primary: #006e18;
+    --on-primary: #ffffff;
+
+    --primary-container: #98f990;
+    --on-primary-container: #002203;
+
+    --secondary: #006d40;
+    --on-secondary: #ffffff;
+
+    --secondary-container: #95f7b9;
+    --on-secondary-container: #002110;
+
+    --tertiary: #006970;
+    --on-tertiary: #ffffff;
+
+    --tertiary-container: #80f4ff;
+    --on-tertiary-container: #002022;
+
+    --error: #ba1a1a;
+    --on-error: #ffffff;
+
+    --error-container: #ffdad6;
+    --on-error-container: #410002;
+
+    --background: #fcfdf6;
+    --on-background: #1a1c19;
+
+    --surface: #fcfdf6;
+    --on-surface: #1a1c19;
+
+    --outline: #73796f;
+
+    --surface-variant: #dee5d8;
+    --on-surface-variant: #424940;
+}
+
+/* Main CSS */
+
 * {
     font-family: "Roboto", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 300;
+    transition: 0.25s ease;
 }
 
 body {

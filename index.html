@@ -14,11 +14,11 @@
 </head>
 <body class="body-dark">
     <div class="header">
-        <span tabindex="0" onclick="openLink('github')" class="material-symbols-rounded">code</span>
-
-        <h1>Epsilon</h1>
-
         <span tabindex="0" onclick="openLink('home')" class="material-symbols-rounded">home</span>
+
+        <h1 style="cursor: pointer;" onclick="openLink('github')">Epsilon</h1>
+
+        <span tabindex="0" onclick="changeTheme('light')" class="material-symbols-rounded" id="theme">light_mode</span>
     </div>
 
     <div class="response">
@@ -49,7 +49,6 @@
         </div>
 
         <span tabindex="0" onclick="understand()" class="material-symbols-rounded" id="send">send</span>
-        <span tabindex="0" onclick="changeTheme('light')" class="material-symbols-rounded" id="theme">light_mode</span>
     </div>
 
     <!-- JS -->

@@ -10,6 +10,10 @@ function changeTheme(theme) {
             changeTheme("dark");
         }
 
+        themeButton.onkeypress = function() {
+            changeTheme("dark");
+        }
+
         localStorage.setItem('theme', 'light');
     }
 
@@ -21,10 +25,12 @@ function changeTheme(theme) {
             changeTheme("light");
         }
 
+        themeButton.onkeypress = function() {
+            changeTheme("light");
+        }
+
         localStorage.setItem('theme', 'dark');
     }
-
-    themeButton.blur();
 }
 
 if (theme == "light") {

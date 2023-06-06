@@ -14,11 +14,11 @@
 </head>
 <body class="body-dark">
     <div class="header">
-        <span tabindex="0" onclick="openLink('home')" class="material-symbols-rounded">home</span>
+        <span tabindex="0" role="button" onclick="openLink('home')" onkeypress="openLink('home')" class="material-symbols-rounded">home</span>
 
         <h1 style="cursor: pointer;" onclick="openLink('github')">Epsilon</h1>
 
-        <span tabindex="0" onclick="changeTheme('light')" class="material-symbols-rounded" id="theme">light_mode</span>
+        <span tabindex="0" role="button" onclick="changeTheme('light')" onkeypress="changeTheme('light')" class="material-symbols-rounded" id="theme">light_mode</span>
     </div>
 
     <div class="response">
@@ -40,22 +40,21 @@
     </div>
 
     <div class="container">
-        <span tabindex="0" onclick="copy('article')" class="material-symbols-rounded" id="copy">content_copy</span>
-        <span tabindex="0" onclick="openLink('article')" class="material-symbols-rounded" id="wikipedia">open_in_new</span>
+        <span tabindex="0" role="button" onclick="copy('article')" onkeypress="copy('article')" class="material-symbols-rounded" id="copy">content_copy</span>
+        <span tabindex="0" role="button" onclick="openLink('article')" onkeypress="openLink('article')" class="material-symbols-rounded" id="wikipedia">open_in_new</span>
 
         <div class="material-textfield">
             <input id="input" placeholder=" " type="text" spellcheck="true">
             <label>Ask me anything</label>
         </div>
 
-        <span tabindex="0" onclick="understand()" class="material-symbols-rounded" id="send">send</span>
+        <span tabindex="0" role="button" onclick="understand()" onkeypress="understand()" class="material-symbols-rounded" id="send">send</span>
     </div>
 
     <!-- JS -->
     <script src="JS/main.js"></script>
     <script src="JS/links.js"></script>
     <script src="JS/copy.js"></script>
-    <script src="JS/shortcut.js"></script>
     <script src="JS/theme.js"></script>
 </body>
 </html>

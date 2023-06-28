@@ -3,23 +3,23 @@
 /* Variables */
 
 .body-dark {
-    --primary: #7ddc77;
-    --on-primary: #003908;
+    --primary: #b6c4ff;
+    --on-primary: #00287d;
 
-    --primary-container: #005310;
-    --on-primary-container: #98f990;
+    --primary-container: #003bb0;
+    --on-primary-container: #dce1ff;
 
-    --secondary: #79da9f;
-    --on-secondary: #00391f;
+    --secondary: #77dd6a;
+    --on-secondary: #003a03;
 
-    --secondary-container: #00522f;
-    --on-secondary-container: #00522f;
+    --secondary-container: #005307;
+    --on-secondary-container: #92fa83;
 
-    --tertiary: #a0cfd4;
-    --on-tertiary: #00363b;
+    --tertiary: #e3b5ff;
+    --on-tertiary: #4d007a;
 
-    --tertiary-container: #1e4d52;
-    --on-tertiary-container: #bcebf0;
+    --tertiary-container: #6e00ab;
+    --on-tertiary-container: #f3daff;
 
     --error: #ffb4ab;
     --on-error: #690005;
@@ -27,36 +27,36 @@
     --error-container: #93000a;
     --on-error-container: #ffdad6;
 
-    --background: #1a1c19;
-    --on-background: #e2e3dd;
+    --background: #1b1b1f;
+    --on-background: #e4e1e6;
 
-    --surface: #1a1c19;
-    --on-surface: #e2e3dd;
+    --surface: #1b1b1f;
+    --on-surface: #e4e1e6;
 
-    --outline: #8c9388;
+    --outline: #90909a;
 
-    --surface-variant: #424940;
+    --surface-variant: #45464f;
     --on-surface-variant: #c2c8bd;
 }
 
 .body-light {
-    --primary: #006e18;
+    --primary: #004fe5;
     --on-primary: #ffffff;
 
-    --primary-container: #98f990;
-    --on-primary-container: #002203;
+    --primary-container: #dce1ff;
+    --on-primary-container: #00164f;
 
-    --secondary: #006d40;
+    --secondary: #006e0c;
     --on-secondary: #ffffff;
 
-    --secondary-container: #95f7b9;
-    --on-secondary-container: #002110;
+    --secondary-container: #92fa83;
+    --on-secondary-container: #002201;
 
-    --tertiary: #006970;
+    --tertiary: #9000de;
     --on-tertiary: #ffffff;
 
-    --tertiary-container: #80f4ff;
-    --on-tertiary-container: #002022;
+    --tertiary-container: #f3daff;
+    --on-tertiary-container: #2f004c;
 
     --error: #ba1a1a;
     --on-error: #ffffff;
@@ -64,16 +64,16 @@
     --error-container: #ffdad6;
     --on-error-container: #410002;
 
-    --background: #fcfdf6;
-    --on-background: #1a1c19;
+    --background: #fefbff;
+    --on-background: #1b1b1f;
 
-    --surface: #fcfdf6;
-    --on-surface: #1a1c19;
+    --surface: #fefbff;
+    --on-surface: #1b1b1f;
 
-    --outline: #73796f;
+    --outline: #767680;
 
-    --surface-variant: #dee5d8;
-    --on-surface-variant: #424940;
+    --surface-variant: #e2e1ec;
+    --on-surface-variant: #45464f;
 }
 
 /* Main CSS */
